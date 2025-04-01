@@ -7,11 +7,10 @@ import {
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'lego-checkout-form',
-  templateUrl: './checkout-form.component.html',
-  styleUrls: ['./checkout-form.component.scss'],
-  standalone: true,
-  imports: [CommonModule, AddressAutocompleteComponent, ReactiveFormsModule],
+    selector: 'lego-checkout-form',
+    templateUrl: './checkout-form.component.html',
+    styleUrls: ['./checkout-form.component.scss'],
+    imports: [CommonModule, AddressAutocompleteComponent, ReactiveFormsModule]
 })
 export class CheckoutFormComponent {
   checkoutForm = this.formBuilder.group({

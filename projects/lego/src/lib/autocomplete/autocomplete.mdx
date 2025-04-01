@@ -1,5 +1,7 @@
-import { Meta, Story, Canvas, ArgsTable } from "@storybook/blocks";
+import { Meta, Story, Canvas, ArgTypes } from "@storybook/blocks";
 import * as AutocompleteStories from "./autocomplete.stories";
+
+<Meta of={AutocompleteStories} name="Overview" />
 
 # Autocomplete Component
 
@@ -8,8 +10,6 @@ import * as AutocompleteStories from "./autocomplete.stories";
 [Figma reference](https://github.com/andreaswissel/cypress-storybook-testing-talk/tree/main/src/components/autocomplete)
 &nbsp;|&nbsp;
 [Usage guidelines](#usage-guidelines)
-
-<Meta of={AutocompleteStories} name="Overview" />
 
 <Canvas>
   <Story of={AutocompleteStories.Default} />
@@ -35,4 +35,4 @@ const options = ["Steak sandwhich", "BBQ ribs", "Hamburger", "French fries"];
 
 ## Component API
 
-<ArgsTable />
+<ArgTypes of={AutocompleteStories} />

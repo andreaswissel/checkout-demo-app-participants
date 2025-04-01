@@ -31,4 +31,14 @@ export const WithAutomatedTest: StoryObj<AutocompleteComponent> = {
   args: {
     ...Default.args,
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const input = await canvas.findByRole('combobox');
+    await userEvent.click(input);
+    await userEvent.type(input, `Steak sandw {enter}`, { delay: 50 });
+
+    const result = await screen.findByText('Steak sandwhich');
+
+    await userEvent.click(result);
+  },
 };

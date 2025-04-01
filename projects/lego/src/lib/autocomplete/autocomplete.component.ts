@@ -5,18 +5,17 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { Observable, startWith, map } from 'rxjs';
 
 @Component({
-  selector: 'lib-autocomplete',
-  templateUrl: './autocomplete.component.html',
-  styleUrls: ['./autocomplete.component.scss'],
-  standalone: true,
-  imports: [
-    FormsModule,
-    MatAutocompleteModule,
-    ReactiveFormsModule,
-    NgFor,
-    NgIf,
-    AsyncPipe,
-  ],
+    selector: 'lib-autocomplete',
+    templateUrl: './autocomplete.component.html',
+    styleUrls: ['./autocomplete.component.scss'],
+    imports: [
+        FormsModule,
+        MatAutocompleteModule,
+        ReactiveFormsModule,
+        NgFor,
+        NgIf,
+        AsyncPipe,
+    ]
 })
 export class AutocompleteComponent {
   @Input() label?: string;

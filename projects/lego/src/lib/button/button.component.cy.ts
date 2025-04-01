@@ -1,7 +1,11 @@
-import { ButtonComponent } from './button.component'
+import { ButtonComponent } from './button.component';
 
 describe('ButtonComponent', () => {
   it('should mount', () => {
-    cy.mount(ButtonComponent)
-  })
-})
+    cy.mount(ButtonComponent, {
+      componentProperties: {
+        label: 'Test Button',
+      },
+    });
+  });
+});

@@ -1,3 +1,4 @@
+/// <reference types="google.maps" />
 import { CommonModule } from '@angular/common';
 import {
   Component,

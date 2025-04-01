@@ -1,5 +1,7 @@
-import { Meta, Story, Canvas, ArgsTable } from "@storybook/blocks";
+import { Meta, Story, Canvas, ArgTypes } from "@storybook/blocks";
 import * as AddressAutocompleteStories from "./address-autocomplete.stories";
+
+<Meta of={AddressAutocompleteStories} name="Overview" />
 
 # Address Component
 
@@ -9,12 +11,10 @@ import * as AddressAutocompleteStories from "./address-autocomplete.stories";
 &nbsp;|&nbsp;
 [Usage guidelines](#usage-guidelines)
 
-<Meta of={AddressAutocompleteStories} name="Overview" />
-
 <Canvas>
   <Story of={AddressAutocompleteStories.Default} />
 </Canvas>
 
 ## Component API
 
-<ArgsTable />
+<ArgTypes of={AddressAutocompleteStories} />

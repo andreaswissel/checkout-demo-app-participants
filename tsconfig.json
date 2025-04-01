@@ -5,6 +5,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -14,7 +15,7 @@
         "dist/lego"
       ]
     },
-    "types": ["@testing-library/cypress"],
+    "types": ["node", "google.maps", "cypress", "@testing-library/cypress"],
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,

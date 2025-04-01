@@ -1,8 +1,18 @@
 {
-  "extends": "../tsconfig.json",
-  "include": ["**/*.ts"],
+  "extends": "../../../tsconfig.json",
   "compilerOptions": {
-    "sourceMap": false,
-    "types": ["cypress"]
-  }
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "types": [
+      "cypress",
+      "node",
+      "google.maps",
+      "@testing-library/cypress"
+    ],
+    "lib": ["ES2022", "dom"]
+  },
+  "include": [
+    "**/*.ts",
+    "../**/*.cy.ts"
+  ]
 }

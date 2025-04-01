@@ -5,11 +5,10 @@ import { Router } from '@angular/router';
 import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-order',
-  templateUrl: './order.component.html',
-  styleUrls: ['./order.component.scss'],
-  imports: [CheckoutFormComponent, ButtonComponent, NgIf],
-  standalone: true,
+    selector: 'app-order',
+    templateUrl: './order.component.html',
+    styleUrls: ['./order.component.scss'],
+    imports: [CheckoutFormComponent, ButtonComponent, NgIf]
 })
 export class OrderComponent {
   isLoading = false;

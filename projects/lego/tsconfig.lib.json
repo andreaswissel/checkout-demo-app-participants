@@ -6,9 +6,12 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": ["google.maps", "@testing-library/cypress"]
+    "types": ["google.maps"],
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["DOM", "ES2022"]
   },
-  "exclude": [
-    "**/*.spec.ts"
-  ]
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.cy.ts", "cypress/**/*"],
+  "include": ["**/*.ts"],
+  "files": ["src/lib/address-autocomplete/address-autocomplete.component.ts"]
 }

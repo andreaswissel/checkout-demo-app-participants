@@ -4,9 +4,10 @@ import { AuthService } from '../auth.service';
 import { DataAccessService } from '../data-access.service';
 
 @Component({
-  selector: 'lego-legacy',
-  templateUrl: './legacy.component.html',
-  styleUrls: ['./legacy.component.css'],
+    selector: 'lego-legacy',
+    templateUrl: './legacy.component.html',
+    styleUrls: ['./legacy.component.css'],
+    standalone: false
 })
 export class LegacyComponent {
   constructor(

@@ -1,3 +1,8 @@
+/// <reference types="cypress" />
+/// <reference types="@testing-library/cypress" />
+/// <reference path="./testing-library.d.ts" />
+/// <reference path="./component-index.d.ts" />
+
 // ***********************************************************
 // This example support/component.ts is processed and
 // loaded automatically before your test files.
@@ -14,12 +19,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import { mount } from 'cypress/angular'
+import { mount } from 'cypress/angular';
+import '@testing-library/cypress/add-commands';
 
 // Augment the Cypress namespace to include type definitions for
 // your custom command.
@@ -28,12 +34,12 @@ import { mount } from 'cypress/angular'
 declare global {
   namespace Cypress {
     interface Chainable {
-      mount: typeof mount
+      mount: typeof mount;
     }
   }
 }
 
-Cypress.Commands.add('mount', mount)
+Cypress.Commands.add('mount', mount);
 
 // Example use:
 // cy.mount(MyComponent)

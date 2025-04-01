@@ -11,6 +11,17 @@ export default defineConfig({
     devServer: {
       framework: 'angular',
       bundler: 'webpack',
+      options: {
+        projectConfig: {
+          root: '.',
+          sourceRoot: './projects/lego/src',
+          buildOptions: {
+            outputPath: 'dist/lego',
+            main: 'projects/lego/src/main.ts',
+            tsConfig: 'projects/lego/cypress/tsconfig.json',
+          },
+        },
+      },
     },
     specPattern: '**/*.cy.ts',
   },
